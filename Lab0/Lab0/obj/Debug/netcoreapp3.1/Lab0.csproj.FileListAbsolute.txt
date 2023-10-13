@@ -11,3 +11,4 @@ C:\Users\Core i5\source\repos\Lab0\Lab0\obj\Debug\netcoreapp3.1\Lab0.csproj.Core
 C:\Users\Core i5\source\repos\Lab0\Lab0\obj\Debug\netcoreapp3.1\Lab0.dll
 C:\Users\Core i5\source\repos\Lab0\Lab0\obj\Debug\netcoreapp3.1\Lab0.pdb
 C:\Users\Core i5\source\repos\Lab0\Lab0\obj\Debug\netcoreapp3.1\Lab0.genruntimeconfig.cache
+C:\Users\Core i5\source\repos\Lab0\Lab0\obj\Debug\netcoreapp3.1\Lab0.GeneratedMSBuildEditorConfig.editorconfig

@@ -8,78 +8,85 @@ namespace Lab0 {
 
 			Console.WriteLine("Select the task:\n\n" +
 
-				"1\nShip moves with speed ν1 meters / sec in a stale water.\n" +
-				"Boat travels through moving ship's L meters length in t seconds.\n" +
-				"Find boat's ν2 speed relative to water (absolute speed).\n\n" +
+				"1\nКорабль движется в неподвижной воде равномерно и прямолинейно со скоростью ν1 метров в секунду.\n" +
+				"Катер проходит расстояние от начала до конца движущегося коробля за t секунд.\n" +
+				"Определить скорость катера ν2 относительно воды (абсолютная скорость), если длина коробля L метров.\n\n" +
 
-				"2\nLibrary's card index for each book contains the following data:\n" +
-				"Title, Author, Number of copies, Publishing year.\n" +
-				"Output books' data of a selected author and count a number of book copies, published in a selected year.\n");
+				"2\nКартотека библиотеки на каждую книгу имеет следующие данные:\n" +
+				"Название, Автор, Количество экземпляров, Год издания.\n" +
+				"Вывести данные о книгах введенного автора и подсчитать общее число экземпляров книг, выпущенных в заданном году.\n");
 
 			switcher = Convert.ToInt32(Console.ReadLine());
 			switch (switcher) {
 				default:
-				Console.WriteLine("\nTask chosen incorrectly.");
-				break;
+					Console.WriteLine("\nНеправильно выбрано задание, введите 1 или 2.");
+					break;
 
 				case 1:
 
-				double ShipSpeed_nu1;
-				double ShipLength_L;
-				double TravelTime_t;
-				string Buffer;
-				double i;
+					double ShipSpeed_nu1;
+					double ShipLength_L;
+					double TravelTime_t;
+					string Buffer;
+					double i;
 
-				double RelativeSpeed_nur;
-				double BoatSpeed_nu2;
+					double RelativeSpeed_nur;
+					double BoatSpeed_nu2;
 
-				Console.WriteLine("\nEnter ν1:");
+					Console.WriteLine("\nВведите ν1 (м/с):");
+					Buffer = Console.ReadLine();
+					if (!double.TryParse(Buffer, out i)) {
+						Console.WriteLine("\nВведено некоректное значение:\nВведено нечисловое значение");
+						break;
+					}
+					ShipSpeed_nu1 = Convert.ToDouble(Buffer);
+					
+					if (ShipSpeed_nu1 < 0) {
+						Console.WriteLine("\nВведено некоректное значение:\nНе допускаются отрицательные значения");
+						break;
+					}
+
+				Console.WriteLine("\nВведите L (метры):");
 				Buffer = Console.ReadLine();
 				if (!double.TryParse(Buffer, out i)) {
-					Console.WriteLine("\nEntered non-numeric value");
-					break;
-				}
-				ShipSpeed_nu1 = Convert.ToDouble(Buffer);
-
-				Console.WriteLine("\nEnter L:");
-				Buffer = Console.ReadLine();
-				if (!double.TryParse(Buffer, out i)) {
-					Console.WriteLine("\nEntered non-numeric value");
+					Console.WriteLine("\nВведено некоректное значение:\nВведено нечисловое значение");
 					break;
 				}
 				ShipLength_L = Convert.ToDouble(Buffer);
 
-				Console.WriteLine("\nEnter t:");
+					if (ShipLength_L < 0) {
+						Console.WriteLine("\nВведено некоректное значение:\nНе допускаются отрицательные значения");
+						break;
+					}
+					if (ShipLength_L == 0) {
+						Console.WriteLine("\nВведено некоректное значение:\nУ коробля отсутствует как минимум 1 измерение");
+						break;
+					}
+
+					Console.WriteLine("\nВведите t (секунды):");
 				Buffer = Console.ReadLine();
 				if (!double.TryParse(Buffer, out i)) {
-					Console.WriteLine("\nEntered non-numeric value");
+					Console.WriteLine("\nВведено некоректное значение:\nВведено нечисловое значение");
 					break;
 				}
 				TravelTime_t = Convert.ToDouble(Buffer);
 
-				if (ShipSpeed_nu1 < 0 || ShipLength_L <= 0 || TravelTime_t <= 0) {
-					Console.WriteLine("\n\nEntered incorrect data:\n");
-
-					if (ShipSpeed_nu1 < 0 || ShipLength_L < 0 || TravelTime_t < 0) {
-						Console.WriteLine("One or more values are negative");
-					}
-					if (ShipLength_L == 0) {
-						Console.WriteLine("Your ship is missing at least 1 dimension");
+					if (TravelTime_t < 0)	{
+						Console.WriteLine("\nВведено некоректное значение:\nНе допускаются отрицательные значения");
+						break;
 					}
 					if (TravelTime_t == 0) {
-						Console.WriteLine("Even light has travel time");
+						Console.WriteLine("\nВведено некоректное значение:\nДаже свет имеет время путешествия");
+						break;
 					}
 
-					break;
-				}
-
 				RelativeSpeed_nur = ShipLength_L / TravelTime_t;
-				Console.WriteLine("\n\nRelative speed νr\n" +
+				Console.WriteLine("\n\nСкорость катера относительно корабля νr (м/с)\n" +
 					"= " + ShipLength_L + " / " + TravelTime_t + " = " + RelativeSpeed_nur);
 
 				BoatSpeed_nu2 = RelativeSpeed_nur + ShipSpeed_nu1;
-				Console.WriteLine("\nRelative speed νr\n" +
-					"= " + ShipLength_L + " + " + TravelTime_t + " = " + BoatSpeed_nu2 + "\n");
+				Console.WriteLine("\nАбсолютная скорость катера ν2\n" +
+					"= " + RelativeSpeed_nur + " + " + ShipSpeed_nu1 + " = " + BoatSpeed_nu2 + "\n");
 
 				break;
 
@@ -102,13 +109,13 @@ namespace Lab0 {
 				doc.Load("XMLFile1.xml");
 				XmlNodeList nodes = doc.DocumentElement.SelectNodes("/Catalog/Book");
 
-				Console.WriteLine("\nBooks that exist:");
+				Console.WriteLine("\nСуществующие книги:");
 				foreach (XmlNode node in nodes) {
 					Console.WriteLine("\nID: " + node.SelectSingleNode("ID").InnerText +
-						"\nTitle: " + node.SelectSingleNode("Title").InnerText +
-						"\nAuthor: " + node.SelectSingleNode("Author").InnerText +
-						"\nCopies: " + node.SelectSingleNode("Copies").InnerText +
-						"\nYear: " + node.SelectSingleNode("Year").InnerText);
+						"\nНазвание: " + node.SelectSingleNode("Title").InnerText +
+						"\nАвтор: " + node.SelectSingleNode("Author").InnerText +
+						"\nКоличество экземпляров: " + node.SelectSingleNode("Copies").InnerText +
+						"\nГод издания: " + node.SelectSingleNode("Year").InnerText);
 				}
 
 				Console.WriteLine("\n\nSelect author:");
@@ -125,10 +132,10 @@ namespace Lab0 {
 					Year = Convert.ToInt32(node.SelectSingleNode("Year").InnerText);
 
 					if (InputAuthor == Author) {
-						Console.WriteLine("\n\nTitle: " + Title +
-							"\nAuthor: " + Author +
-							"\nCopies: " + Copies +
-							"\nYear: " + Year);
+						Console.WriteLine("\n\nНазвание: " + Title +
+							"\nАвтор: " + Author +
+							"\nКоличество экземпляров: " + Copies +
+							"\nГод издания: " + Year);
 
 						AuthorBuffer = 1;
 					}
@@ -139,10 +146,10 @@ namespace Lab0 {
 				}
 
 				if (AuthorBuffer == 0) {
-					Console.WriteLine("\n\nNo books found featuring " + InputAuthor);
+					Console.WriteLine("\n\nНе найдено книг с автором " + InputAuthor);
 				}
 
-				Console.WriteLine("\n\nFound " + CopiesBuffer + " books released in " + InputYear);
+				Console.WriteLine("\n\nНайдено " + CopiesBuffer + " экземпляров книг выпущенных в " + InputYear + " году");
 
 				break;
 			}
