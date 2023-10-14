@@ -1,0 +1,22 @@
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.exe.config
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.exe
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.pdb
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\MathParser.org-mXparser.dll
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.AssemblyReference.cache
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.MainForm.resources
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.GenerateResource.cache
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.CoreCompileInputs.cache
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.CopyComplete
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.exe
+D:\Users\UPGRADE\source\repos\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.pdb
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.exe.config
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.exe
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\GoldenRatioMethod.pdb
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\bin\Debug\MathParser.org-mXparser.dll
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.AssemblyReference.cache
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.MainForm.resources
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.GenerateResource.cache
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.CoreCompileInputs.cache
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.csproj.CopyComplete
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.exe
+C:\Users\Core i5\Desktop\GoldenRatioMethod-main\GoldenRatioMethod-main\GoldenRatioMethod\GoldenRatioMethod\obj\Debug\GoldenRatioMethod.pdb
