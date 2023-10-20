@@ -1,0 +1,18 @@
+C:\Users\Harsat\source\repos\Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\Users\Harsat\source\repos\Sorting\Sorting\bin\Debug\Sorting.exe
+C:\Users\Harsat\source\repos\Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.csproj.AssemblyReference.cache
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.MainForm.resources
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.cache
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.exe
+C:\Users\Harsat\source\repos\Sorting\Sorting\obj\Debug\Sorting.pdb
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\bin\Debug\Sorting.exe
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.csproj.AssemblyReference.cache
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.MainForm.resources
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.cache
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.exe
+C:\Users\Core i5\Desktop\OlympiadSorting-main\OlympiadSorting-main\Sorting\Sorting\obj\Debug\Sorting.pdb
